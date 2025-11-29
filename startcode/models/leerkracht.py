@@ -27,5 +27,6 @@ class Leerkracht(Karakter):
         METHOD OVERRIDING: we vervangen de parent methode en hergebruiken deze met super().
         """
         # TODO Oefening 1: Roep super().beschrijf() aan en voeg vakinformatie toe
-        pass
+        basis = super().beschrijf()
+        return f"{basis} - Leerkracht {self.vak}"
 
